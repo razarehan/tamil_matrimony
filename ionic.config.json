@@ -1,0 +1,7 @@
+{
+  "name": "tamil_matrimony",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
