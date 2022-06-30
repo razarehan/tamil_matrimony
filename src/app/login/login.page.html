@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <ion-item>
+      <ion-label>Matrimony Id / Mobile No. / E-mail</ion-label>
+      <ion-input 
+        type="text" 
+        name="email" 
+        id="email" 
+        ngModel 
+        required 
+        email
+        #email="ngModel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input 
+        type="password" 
+        name="password"
+        id="password"
+        ngModel
+        required
+        minlength="6"
+        #password="ngModel"></ion-input>
+    </ion-item>
+    <ion-button 
+      type="submit" 
+      expand="block"
+      [disabled]="!f.valid">Login</ion-button>
+  </form>
+</ion-content>
