@@ -54,7 +54,7 @@ async errorpresent(){
 
 async succes(){
   const toast = await this.toastController.create({
-    color: 'green',
+    color:'success',
     duration: 3000,
     message: 'Succesfully Login',
     position :'middle'

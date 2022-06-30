@@ -17,6 +17,11 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pagenotgound/pagenotgound.module').then( m => m.PagenotgoundPageModule)
+  },
+
 ];
 
 @NgModule({
