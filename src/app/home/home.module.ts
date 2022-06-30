@@ -5,15 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import {NewMatchesComponent} from './components/new-matches/new-matches.component'
+import {DailyRecommndsComponent} from './components/daily-recommnds/daily-recommnds.component'
+import{RemindAgainComponent} from './components/remind-again/remind-again.component'
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent]
 })
 export class HomePageModule {}
