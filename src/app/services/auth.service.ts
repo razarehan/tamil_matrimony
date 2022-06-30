@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 })
 export class AuthService {
   loggedIn = false;
-  loggedInEmitter = new Subject<boolean>();
+  
   isAuthenticate() {
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -30,11 +30,16 @@ export class AuthService {
   }
 
   isLoggedIn() {
-    this.loggedIn = false;
-    return this.getToken() !== null;
+    console.log(this.getToken());
+    if(this.getToken() === null) {
+      return false;
+    }
+    this.loggedIn = true;
+    return true;
   }
 
   logout() {
+    this.loggedIn = false;
     localStorage.removeItem('token');
     this.router.navigate(['login']);
   }

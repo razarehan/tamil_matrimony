@@ -14,8 +14,11 @@ export class LoginPage implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-    if (this.authService.isLoggedIn()) {
-      this.router.navigate(['home']);
+    if(this.authService.isLoggedIn()) {
+      console.log('=>' + this.authService.isLoggedIn());
+      
+      this.router.navigate(['/home']);
+      return;
     }
   }
 
@@ -31,7 +34,7 @@ export class LoginPage implements OnInit {
       this.router.navigate(['/home']);
     }, error => {
       console.log(error);
-      
+      // make toast to show error message
     })
   }
 }
