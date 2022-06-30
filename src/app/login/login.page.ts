@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { AuthService } from '../services/auth.service';
 export class LoginPage implements OnInit {
   error:string = '';
   constructor(private authService: AuthService, 
-              private router: Router) { }
+              private router: Router, public toastController: ToastController) { }
 
   ngOnInit() {
     if(this.authService.isLoggedIn()) {
@@ -31,10 +32,33 @@ export class LoginPage implements OnInit {
 
     this.authService.login(email, password).subscribe(resData => {
       console.log(resData);
+      this.succes();
       this.router.navigate(['/home']);
     }, error => {
       console.log(error);
-      // make toast to show error message
+      this.errorpresent();
     })
   }
+
+  
+async errorpresent(){
+  const toast = await this.toastController.create({
+    color: 'dark',
+    duration: 3000,
+    message: 'Login Failed',
+    position :'top'
+  });
+  await toast.present();
+}
+
+
+async succes(){
+  const toast = await this.toastController.create({
+    color: 'green',
+    duration: 3000,
+    message: 'Succesfully Login',
+    position :'middle'
+  });
+  await toast.present();
+}
 }
