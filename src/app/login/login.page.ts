@@ -36,5 +36,6 @@ export class LoginPage implements OnInit {
       console.log(error);
       // make toast to show error message
     })
+    form.reset();
   }
 }

@@ -1,0 +1,33 @@
+ion-content {
+  --background: white;
+  h2 {
+    color: black;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  ion-item {
+    --background: white; 
+    --border-style:none;
+    ion-input{
+      --background: rgb(230, 238, 252) !important;
+      --color: black;
+      --padding-start:10px;
+      border: 1px rgb(214, 215, 218) solid;
+      border-radius: 5px;
+      width: 90%;
+    }
+  }
+  ion-label {
+    --color: black;
+    font-weight: bold;
+    font-size: large;
+  }
+  ion-button {
+    --background: rgb(255, 152, 0);
+    width: 90%;
+    height: 40px;
+  }
+  ion-checkbox {
+    --color: black;
+  }
+}

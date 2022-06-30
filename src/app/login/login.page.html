@@ -1,37 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h2>Existing Member? Login</h2>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <div class="alert alert-danger" *ngIf="error!==''">{{error}}</div>
     <ion-item>
-      <ion-label>Matrimony Id / Mobile No. / E-mail</ion-label>
+      <ion-label position="stacked">Matrimony Id / Mobile No. / E-mail</ion-label>
       <ion-input 
+        class="login-inp"
         type="text" 
-        name="email" 
+        name="email"
         id="email" 
         ngModel 
         required 
         email
-        #email="ngModel"></ion-input>
+        #email="ngModel"
+        placeholder="Enter Matrimony Id / Mobile No. / E-mail"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Password</ion-label>
+      <ion-label position="stacked">Password</ion-label>
       <ion-input 
+        class="login-inp"
         type="password" 
         name="password"
         id="password"
         ngModel
         required
         minlength="6"
-        #password="ngModel"></ion-input>
+        #password="ngModel"
+        placeholder="Enter Password"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-checkbox mode="md" checked="true"></ion-checkbox>
+      <ion-label>Keep me logged in</ion-label>
+    </ion-item>
+    <ion-item>
     <ion-button 
       type="submit" 
       expand="block"
       [disabled]="!f.valid">Login</ion-button>
+    </ion-item>
   </form>
 </ion-content>
