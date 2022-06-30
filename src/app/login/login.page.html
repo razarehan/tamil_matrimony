@@ -10,7 +10,6 @@
     <ion-item>
       <ion-label position="stacked">Matrimony Id / Mobile No. / E-mail</ion-label>
       <ion-input 
-        class="login-inp"
         type="text" 
         name="email"
         id="email" 
@@ -23,7 +22,6 @@
     <ion-item>
       <ion-label position="stacked">Password</ion-label>
       <ion-input 
-        class="login-inp"
         type="password" 
         name="password"
         id="password"
@@ -34,7 +32,12 @@
         placeholder="Enter Password"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-checkbox mode="md" checked="true"></ion-checkbox>
+      <ion-checkbox 
+        mode="md"  
+        name="kmli" 
+        id="kmli"
+        checked
+        [(ngModel)]="keepMeLoggedIn"></ion-checkbox>
       <ion-label>Keep me logged in</ion-label>
     </ion-item>
     <ion-item>

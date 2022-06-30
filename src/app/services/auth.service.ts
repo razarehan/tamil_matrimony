@@ -44,10 +44,11 @@ export class AuthService {
     this.router.navigate(['login']);
   }
 
-  login(email: string, password: string) {
+  login(email: string, password: string, keepMeLoggedIn:boolean) {
     if (email === 'admin@gmail.com' && password === '123123') {
       this.loggedIn = true;
-      this.setToken('authToken');
+      if(keepMeLoggedIn)
+        this.setToken('authToken');
       return of({ name: 'Badal Das', email: 'badal.swami360@gmail.com' });
     }
     return throwError(new Error('Incorrect username or password'));

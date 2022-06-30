@@ -10,9 +10,10 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  error:string = '';
+  keepMeLoggedIn:boolean = true;
   constructor(private authService: AuthService, 
-              private router: Router, public toastController: ToastController) { }
+              private router: Router, 
+              public toastController: ToastController) { }
 
   ngOnInit() {
     if(this.authService.isLoggedIn()) {
@@ -29,8 +30,8 @@ export class LoginPage implements OnInit {
     }
     const email = form.value.email;
     const password = form.value.password;
-
-    this.authService.login(email, password).subscribe(resData => {
+    
+    this.authService.login(email, password, this.keepMeLoggedIn).subscribe(resData => {
       console.log(resData);
       this.succes();
       this.router.navigate(['/home']);

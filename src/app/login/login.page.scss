@@ -8,6 +8,14 @@ ion-content {
   ion-item {
     --background: white; 
     --border-style:none;
+    
+    ion-label {
+      --color: black;
+      font-weight: bold;
+      font-size: large;
+      margin-bottom: 10px;
+    }
+
     ion-input{
       --background: rgb(230, 238, 252) !important;
       --color: black;
@@ -17,11 +25,7 @@ ion-content {
       width: 90%;
     }
   }
-  ion-label {
-    --color: black;
-    font-weight: bold;
-    font-size: large;
-  }
+  
   ion-button {
     --background: rgb(255, 152, 0);
     width: 90%;
@@ -29,5 +33,6 @@ ion-content {
   }
   ion-checkbox {
     --color: black;
+    margin-right: 10px;
   }
 }
