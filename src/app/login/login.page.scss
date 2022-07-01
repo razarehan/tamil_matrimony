@@ -48,6 +48,7 @@ ion-content {
   }
 
   ion-card.contact {
+    --background: rgb(44, 44, 44); 
     margin-left: 0px;
     margin-bottom: 0px;
     border-radius: 0%;
@@ -75,7 +76,7 @@ ion-content {
     }
     ion-accordion {
       width: 90%;
-      margin: 10px auto;
+      margin: 15px auto;
       border-radius: 10px;
       ion-item {
         --border-style:none;
@@ -125,4 +126,12 @@ ion-content {
 .logo {
   width: 200px;
   height: 60px;
+}
+.password-icon{
+  position: absolute !important;
+  bottom: 5% !important;
+  right: 15% !important;
+  z-index: 2;
+  color: rgb(119, 119, 119);
+  // margin: 0 auto !important;
 }
