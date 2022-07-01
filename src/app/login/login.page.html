@@ -5,46 +5,114 @@
 </ion-header>
 
 <ion-content>
+  <!-- Logo -->
+  <ion-label position="stacked" class="logo-label">From BharatMatrimony</ion-label>
+  <img src="../../assets/img/tamil-matrimony-logo.png" alt="Logo" class="logo">
+
+  <!-- Heading -->
   <h2>Existing Member? Login</h2>
+
+  <!-- Form -->
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <ion-item>
       <ion-label position="stacked">Matrimony Id / Mobile No. / E-mail</ion-label>
-      <ion-input 
-        type="text" 
-        name="email"
-        id="email" 
-        ngModel 
-        required 
-        email
-        #email="ngModel"
+      <ion-input type="text" name="email" id="email" ngModel required email #email="ngModel"
         placeholder="Enter Matrimony Id / Mobile No. / E-mail"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Password</ion-label>
-      <ion-input 
-        type="password" 
-        name="password"
-        id="password"
-        ngModel
-        required
-        minlength="6"
-        #password="ngModel"
+      <ion-input type="password" name="password" id="password" ngModel required minlength="6" #password="ngModel"
         placeholder="Enter Password"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-checkbox 
-        mode="md"  
-        name="kmli" 
-        id="kmli"
-        checked
-        [(ngModel)]="keepMeLoggedIn"></ion-checkbox>
+      <ion-checkbox mode="md" name="kmli" id="kmli" checked [(ngModel)]="keepMeLoggedIn"></ion-checkbox>
       <ion-label>Keep me logged in</ion-label>
     </ion-item>
     <ion-item>
-    <ion-button 
-      type="submit" 
-      expand="block"
-      [disabled]="!f.valid">Login</ion-button>
+      <ion-button type="submit" expand="block" [disabled]="!f.valid">Login</ion-button>
     </ion-item>
   </form>
+  <!-- contact -->
+  <ion-card class="contact">
+    <ion-item class="contact">
+      <img src="../../assets/icon/seo-desk-footer-icon-1.png" alt="icon1">
+      <ion-card-content>
+        Contact genuine profiles with 100% verified mobile numbers
+      </ion-card-content>
+    </ion-item>
+    <ion-item class="contact">
+      <img src="../../assets/icon/seo-desk-footer-icon-2.png" alt="icon1">
+      <ion-card-content>
+        Highest number of documented marriages online
+        <ion-text>- Limca Book of Records</ion-text>
+      </ion-card-content>
+    </ion-item>
+    <ion-item class="contact">
+      <img src="../../assets/icon/seo-desk-footer-icon-3.png" alt="icon1">
+      <ion-card-content>
+        The most trusted matrimony brand
+        <ion-text>- The Brand Trust Report</ion-text>
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+  <!-- accordion -->
+  <ion-card class="accordion">
+    <ion-accordion-group>
+      <ion-accordion>
+        <ion-item slot="header">
+          <ion-label>About TamilMatrimony</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          TamilMatrimony, a part of BharatMatrimony - the pioneer in online matrimony, is the most trusted matrimony
+          service for Lakhs of Tamils worldwide. BharatMatrimony has been recognised as the most trusted online
+          matrimony service by the Brand Trust Report. We have also been featured in Limca Book of records for most
+          number of documented marriages online. Our purpose is to build a better Bharat through happy marriages.
+        </div>
+      </ion-accordion>
+      <ion-accordion>
+        <ion-item slot="header">
+          <ion-label>Help & Support</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          24x7 Live help<br>
+          Contact us<br>
+          Feedback<br>
+          FAQs
+        </div>
+      </ion-accordion>
+      <ion-accordion>
+        <ion-item slot="header">
+          <ion-label>Our Other Services</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          EliteMatrimony.com<br>
+          Jodii<br>
+          Jodi<br>
+          Muslim match App Store<br>
+          Muslim match Play Store
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-card>
+  <!-- footer  -->
+  <ion-card class="footer">
+    <ion-text>
+      This website is strictly for matrimonial purpose only and not a dating website.<br>
+      Copyright © 2022. All rights reserved.
+    </ion-text>
+    <ion-item class="limca">
+      <img src="../../assets/icon/limca-book.png" alt="Limca">
+      <ion-card-content>
+        The Limca Book<br>
+        of records<br>
+        Highest Number of Marriages
+      </ion-card-content>
+    </ion-item>
+    <p class="follow-us-on">Follow Us on:</p>
+    <ion-item class="follow">
+      <ion-icon class="follow-icon" name="logo-facebook" color="primary"></ion-icon>
+      <ion-icon class="follow-icon" name="logo-twitter" color="success"></ion-icon>
+      <ion-icon class="follow-icon" name="logo-instagram" color="danger"></ion-icon>
+    </ion-item>
+  </ion-card>
 </ion-content>

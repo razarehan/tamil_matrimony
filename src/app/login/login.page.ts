@@ -17,7 +17,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     if(this.authService.isLoggedIn()) {
-      console.log('=>' + this.authService.isLoggedIn());
+      // console.log('=>' + this.authService.isLoggedIn());
       
       this.router.navigate(['/home']);
       return;
@@ -43,24 +43,24 @@ export class LoginPage implements OnInit {
   }
 
   
-async errorpresent(){
-  const toast = await this.toastController.create({
-    color: 'dark',
-    duration: 3000,
-    message: 'Login Failed',
-    position :'top'
-  });
-  await toast.present();
-}
+  async errorpresent(){
+    const toast = await this.toastController.create({
+      color: 'dark',
+      duration: 3000,
+      message: 'Login Failed',
+      position :'top'
+    });
+    await toast.present();
+  }
 
 
-async succes(){
-  const toast = await this.toastController.create({
-    color:'success',
-    duration: 3000,
-    message: 'Succesfully Login',
-    position :'middle'
-  });
-  await toast.present();
-}
+  async succes(){
+    const toast = await this.toastController.create({
+      color:'success',
+      duration: 3000,
+      message: 'Succesfully Login',
+      position :'middle'
+    });
+    await toast.present();
+  }
 }
