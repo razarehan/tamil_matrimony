@@ -8,10 +8,19 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./remind-again.component.scss'],
 })
 export class RemindAgainComponent implements OnInit {
+  data: any;
 
   constructor(public toastController: ToastController, public alertController: AlertController) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    fetch('../../../../assets/Dataset/Profiles.json').then(res => res.json())
+   .then(json => {
+     this.data = json;
+   }).catch((err) => {
+     console.log(err);     
+   })
+   console.log(this.data);  
+  }
   async seeAll(){
     const toast = await this.toastController.create({
       duration: 1000,
