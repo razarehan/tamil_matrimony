@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+.header{
+  background: linear-gradient(to right,#5cbb67,#1eb0c0);
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+}
+.button-row{
+  text-align: center;
+}
+.regular{
+  font-size: 14px!important;
+  letter-spacing: .42px;
+  color: #fff;
+  --background: #288a84!important;
+  border-radius: 20px;
+  --border-radius: 20px;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  font-weight: bold;
+  min-height: 36px!important;
+  margin-left: auto;
+  position: relative;
+  z-index: 99;
+}
+.prime{
+  font-size: 14px!important;
+  letter-spacing: .42px;
+  background: #fff;
+  --background: #fff;
+  border-radius: 20px;
+  --border-radius: 0px 20px 20px 0px ;
+  font-weight: bold;
+  position: relative;
+  margin-left: -32px;
+  margin-right: auto;
+  margin-top: 24px;
+  z-index: 9;
+  height: 28px!important;
+  --height: 28px!important;
+  padding-left: 24px;
+  min-width: auto!important; 
+  color: black;
+}

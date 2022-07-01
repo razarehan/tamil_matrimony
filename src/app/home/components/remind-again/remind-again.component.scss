@@ -1,0 +1,45 @@
+ion-header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: unset;
+}
+.headtitle{
+    font-size: 16px;
+    font-weight: 900;
+    float: left;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+ion-content{
+    --offset-top: 30px;
+    --padding-start: 16px;
+    --padding-end:16px;
+}
+ion-col{
+    padding: 0px;
+    margin: 0px;
+}
+.img-col{
+    width: 25%!important;
+    float: left;
+}
+.image{
+    margin-left: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    --border-radius: 50%!important;
+    height: 20vw;
+    width: 20vw;
+    object-fit: fill;
+    float: left;
+    margin-right: 16px;
+}
+.image-title{
+    font-size: 4vmin;
+    height: 100px;
+    min-height: 50px;
+    --overflow:auto;
+    box-sizing: border-box;
+    padding: 0px;
+    line-height: 1px;
+}

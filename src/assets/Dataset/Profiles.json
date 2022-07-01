@@ -1,0 +1,16 @@
+[  
+    {
+      "name":"Meera", 
+      "id": "M9801341",
+      "img":"../assets/Images/img1.jpg",
+      "created_by" : "Parent",
+      "age":25, 
+      "height":"5 ft 5 in", 
+      "mother":"Malayalam", 
+      "caste": "Nair",
+      "score":"0.8",
+      "education": "Btech",
+      "profession": "Software Professional",
+      "place": "Kozhikode, Kerala"
+    }
+]
