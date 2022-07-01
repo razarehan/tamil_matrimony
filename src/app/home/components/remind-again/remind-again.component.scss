@@ -15,31 +15,41 @@ ion-content{
     --padding-start: 16px;
     --padding-end:16px;
 }
-ion-col{
-    padding: 0px;
-    margin: 0px;
-}
-.img-col{
-    width: 25%!important;
-    float: left;
+.seeall{
+    font-size: 13px;
+    color: #ed6402;
+    text-align: right;
+    padding-top: 6px;
+    align-items: left;
 }
 .image{
     margin-left: auto;
     border-radius: 50%;
     overflow: hidden;
     --border-radius: 50%!important;
-    height: 20vw;
-    width: 20vw;
+    height: 10rem;
+    width: 10rem;
+    max-width: 5rem;
+    max-height: 5rem;
     object-fit: fill;
     float: left;
     margin-right: 16px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.img-avtar{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
 }
 .image-title{
-    font-size: 4vmin;
+    --font-size: 18px;
     height: 100px;
     min-height: 50px;
     --overflow:auto;
     box-sizing: border-box;
-    padding: 0px;
-    line-height: 1px;
+    padding-top: 10px;
+    --padding-top: 10px;
+    --line-height: 2.5px !important;
+    position: relative;
 }
