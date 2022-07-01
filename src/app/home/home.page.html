@@ -1,14 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="header">
+    <ion-row class="button-row">
+      <ion-button class="regular">Regular</ion-button>
+      <ion-button class="prime">Prime</ion-button>
+    </ion-row>
+    
+  <ion-button (click)="logout()">Logout</ion-button>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   
-  <ion-button (click)="logout()">Logout</ion-button>
   <app-remind-again></app-remind-again>
   <app-new-matches></app-new-matches>
   <app-daily-recommnds></app-daily-recommnds>
