@@ -1,13 +1,24 @@
 <ion-header>
-  <ion-title class="headtitle">Remind Them Again</ion-title>
-  <ion-title class ="seeall">See all</ion-title>
+  <ion-label class="headtitle">Remind Them Again</ion-label>
+  <ion-label (click)="seeAll()" class ="seeall">See all</ion-label>
 </ion-header>
 <ion-content>
     <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/Images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind Jasmin(27 yrs, 5'3'') about your Interst </ion-label>
+      <ion-img class ="image" src={{data[0].img}} (click)="goProfile(i,data[0])"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[0])">Remind <b>{{data[0].name}}</b> ({{data[0].age}} yrs, {{data[0].height}}) about your Interst </ion-label>
       <br><br>
-      <ion-label class="seeall">Remind Her</ion-label>
+      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
     </ion-avatar>
-
+    <ion-avatar class="img-avtar">
+      <ion-img class ="image" (click)="goProfile(i,data[1])" src={{data[1].img}}></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[1])">Remind <b>{{data[1].name}}</b> ({{data[1].age}} yrs, {{data[1].height}}) about your Interst </ion-label>
+      <br><br>
+      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
+    </ion-avatar>
+    <ion-avatar class="img-avtar">
+      <ion-img class ="image" src={{data[2].img}} (click)="goProfile(i,data[2])"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[2])">Remind <b>{{data[2].name}}</b> ({{data[2].age}} yrs, {{data[2].height}}) about your Interst </ion-label>
+      <br><br>
+      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
+    </ion-avatar>
 </ion-content>

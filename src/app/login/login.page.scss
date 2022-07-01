@@ -1,9 +1,16 @@
 ion-content {
   --background: white;
+  padding: 0px;
   h2 {
     color: black;
     font-weight: bold;
     padding-left: 20px;
+  }
+  .logo-label {
+    color: gray;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
   }
   ion-item {
     --background: white; 
@@ -24,6 +31,10 @@ ion-content {
       border-radius: 5px;
       width: 90%;
     }
+    // not working
+    ion-input:focus{
+      border: 1px red solid !important;
+    }
   }
   
   ion-button {
@@ -35,4 +46,92 @@ ion-content {
     --color: black;
     margin-right: 10px;
   }
+
+  ion-card.contact {
+    --background: rgb(44, 44, 44); 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-radius: 0%;
+    width: 100%;
+    .contact{
+      --background: rgb(44, 44, 44); 
+    }
+    ion-card-content{
+      font-weight: bold;
+      ion-text{
+        --color: white;
+        display: block;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  ion-card.accordion{
+    --background: rgb(241, 241, 241);
+    margin: 0px;
+    border-radius: 0%;
+    width: 100%;
+    ion-accordion-group {
+      padding: 20px 0px;
+    }
+    ion-accordion {
+      width: 90%;
+      margin: 15px auto;
+      border-radius: 10px;
+      ion-item {
+        --border-style:none;
+      }
+      .ion-padding{
+        background-color: white;
+        color: gray;
+      }
+    }
+  }
+
+
+  ion-card.footer {
+    --background: white;
+    border-radius: 0px;
+    width: 100%;
+    margin: 0px;
+    ion-text {
+      display: inline-block;
+      padding-top: 30px;
+      padding-left: 35px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+    }
+    ion-item.limca {
+      margin-left: 15px;
+      ion-card-content {
+        color:rgb(168, 168, 168);
+        font-size: 13px;
+      }
+    }
+    p {
+      color: rgb(73, 82, 112);
+      margin-bottom: 0px;
+      margin-left: 35px;
+      font-size: 17px;
+    }
+    ion-item.follow { 
+      margin-left: 14px;
+      .follow-icon {
+        margin: 1px;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
+.password-icon{
+  position: absolute !important;
+  bottom: 5% !important;
+  right: 15% !important;
+  z-index: 2;
+  color: rgb(119, 119, 119);
+  // margin: 0 auto !important;
 }

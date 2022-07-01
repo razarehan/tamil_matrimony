@@ -1,7 +1,8 @@
 ion-header{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: unset;
+    height: fit-content;
 }
 .headtitle{
     font-size: 16px;
@@ -9,6 +10,10 @@ ion-header{
     float: left;
     word-wrap: break-word;
     box-sizing: border-box;
+    width: 75%;
+    height: fit-content;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
 ion-content{
     --offset-top: 30px;
@@ -19,8 +24,11 @@ ion-content{
     font-size: 13px;
     color: #ed6402;
     text-align: right;
-    padding-top: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     align-items: left;
+    width: 25%;
+    height: fit-content;
 }
 .image{
     margin-left: auto;
@@ -38,9 +46,10 @@ ion-content{
     position: relative;
 }
 .img-avtar{
-    margin-top: 10px;
+    margin-top: 5px;
     float: left;
     width: 100%;
+    height:fit-content
 }
 .image-title{
     --font-size: 18px;
@@ -52,4 +61,12 @@ ion-content{
     --padding-top: 10px;
     --line-height: 2.5px !important;
     position: relative;
+}
+.remind{
+    font-size: 13px;
+    color: #ed6402;
+    text-align: right;
+    margin-top: 6px;
+    align-items: left;
+    margin-bottom: 30px;
 }

@@ -11,13 +11,15 @@ import { ToastController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
   keepMeLoggedIn:boolean = true;
+  passwordIcon="eye-off-outline";
+  inputType="password";
   constructor(private authService: AuthService, 
               private router: Router, 
               public toastController: ToastController) { }
 
   ngOnInit() {
     if(this.authService.isLoggedIn()) {
-      console.log('=>' + this.authService.isLoggedIn());
+      // console.log('=>' + this.authService.isLoggedIn());
       
       this.router.navigate(['/home']);
       return;
@@ -42,25 +44,35 @@ export class LoginPage implements OnInit {
     form.reset();
   }
 
+  changePasswordIcon() {
+    if(this.passwordIcon === 'eye-off-outline') {
+      this.passwordIcon = 'eye-outline';
+      this.inputType="text";
+    }
+    else {
+      this.passwordIcon = 'eye-off-outline';
+      this.inputType="password";
+    }
+  }
   
-async errorpresent(){
-  const toast = await this.toastController.create({
-    color: 'dark',
-    duration: 3000,
-    message: 'Login Failed',
-    position :'top'
-  });
-  await toast.present();
-}
+  async errorpresent(){
+    const toast = await this.toastController.create({
+      color: 'dark',
+      duration: 3000,
+      message: 'Login Failed',
+      position :'top'
+    });
+    await toast.present();
+  }
 
 
-async succes(){
-  const toast = await this.toastController.create({
-    color:'success',
-    duration: 3000,
-    message: 'Succesfully Login',
-    position :'middle'
-  });
-  await toast.present();
-}
+  async succes(){
+    const toast = await this.toastController.create({
+      color:'success',
+      duration: 3000,
+      message: 'Succesfully Login',
+      position :'middle'
+    });
+    await toast.present();
+  }
 }

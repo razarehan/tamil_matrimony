@@ -22,6 +22,10 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
+    path: 'view-profile',
+    loadChildren: () => import('../app/home/Pages/view-profile/view-profile.module').then( m => m.ViewProfilePageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pagenotgound/pagenotgound.module').then( m => m.PagenotgoundPageModule)
   },
