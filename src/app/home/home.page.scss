@@ -70,3 +70,34 @@
   min-width: auto!important; 
   color: black;
 }
+.pro-img{
+  margin-left: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  --border-radius: 50%!important;
+  float: left;
+  margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  margin-top: 15px;
+}
+.img-avtar{
+  margin-top: 25px;
+  float: left;
+  width: 75%;
+  height:fit-content;
+  margin-left: 20px;
+}
+.wish{
+  margin-left: 20px;
+  margin-right: 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.name{
+  margin-left: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
