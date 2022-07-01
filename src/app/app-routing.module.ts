@@ -14,6 +14,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'dailyrecomm',
+    loadChildren: () => import('../app/home/components/daily-recommnds/dailyrecomm/dailyrecomm.module').then(m => m.DailyrecommPageModule)
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },

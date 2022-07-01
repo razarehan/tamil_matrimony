@@ -11,7 +11,7 @@ export class DailyRecommndsComponent implements OnInit {
   constructor(private router: Router){ }
 
   DailyRec(){
-    this.router.navigate(['login']);
+    this.router.navigate(['dailyrecomm']);
   }
   ngOnInit() {}
 

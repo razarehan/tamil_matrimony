@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+    <ion-title>dailyrecomm</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  
+  <div class="contener">
+  <ion-card *ngFor="let user of questions1; let index=index">
+    <img id="image1" src="{{user.img}}">
+    <ion-card-header>
+      <p id="check">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>varified &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-icon name="logo-wordpress"></ion-icon> Premium NRI
+      </p>
+      <ion-card-title class="name" >{{user.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="content">
+      27Yrs, 5.2 in., kerala, Nair,<br>
+      MBBS dr., Channai<br>
+      Mukkam kerala
+    </ion-card-content>
+    <ion-button class="btn1" color="light" (click)="shortlist()"><ion-icon name="star-outline"  ></ion-icon>&nbsp;shortlist</ion-button>
+    <ion-button class="btn1" color="light" (click)="notCheck(index)">like her? &nbsp;<ion-icon name="close"></ion-icon></ion-button>
+    <ion-button class="btn2" color="warning"  (click)="activeCheck(index)"><ion-icon name="checkmark"></ion-icon></ion-button>
+</ion-card>
+</div>
+</ion-content>

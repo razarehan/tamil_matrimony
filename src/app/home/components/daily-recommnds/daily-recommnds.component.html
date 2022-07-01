@@ -1,25 +1,51 @@
-<ion-header class="ion-no-border" >
-  <ion-toolbar style="background-color: aqua;">
-
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-   </ion-buttons>
-    <ion-title >Daily Recomandation</ion-title>
-    <a (click)="DailyRec()" style="color: orange;">see all</a>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content >
-  
-  <ion-card > 
+  <ion-card style="background-color:silver; border: none;"> 
     
-     <ion-card-title  >Jyoti</ion-card-title>
-  
-    <ion-card-content class="content">
-      27Yrs, 5.2 in., kerala, Nair,<br>
-      MBBS dr., Channai<br>
-      Mukkam kerala
-    </ion-card-content>
+     <ion-card-title  >
+      Your Daily Recommendations for 30th june</ion-card-title>
+      <div class="avtar">
+      <ion-avatar>
+        <ion-img  src="../../../../assets/images/pip3.jpg"></ion-img>
+      </ion-avatar>
+      <p>Rashmika</p>
+    </div>
+
+    <div class="avtar">
+      <ion-avatar>
+        <ion-img  src="../../../../assets/images/pip2.jpg"></ion-img>
+      </ion-avatar>
+      <p>AntimBala</p>
+    </div> 
+    
+    <div class="avtar">
+      <ion-avatar>
+        <ion-img src="../../../../assets/images/pip4.jpg"></ion-img>
+      </ion-avatar>
+      <p>Deeksha</p>
+    </div> 
+    
+    <div class="avtar">
+      <ion-avatar>
+        <ion-img src="../../../../assets/images/pip6.jpg"></ion-img>
+      </ion-avatar>
+      <p>Jyoti</p>
+    </div>
+
+    <div class="avtar">
+    <ion-button style="border-radius: 50%;" color="warning" (click)="DailyRec()">></ion-button>
+    <p (click)="DailyRec()">see all</p>
+    </div>
+
+    <div class="time">
+      <p style="text-align:center;">Time left to view profile :</p> <p id="p1"></p>
+    </div>
   </ion-card>
+  <script>
+
+    var today = new Date();
+    
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    document.getElementById("p1").innerHTML =time;
+    </script>
 
 </ion-content>
