@@ -20,8 +20,63 @@
 ion-card-title{
     text-align: center; 
     font-style: normal; 
-    font-size:small; 
+    font-size :small; 
     color: black;
     padding-top: 3vw;
     background-color: silver;
+}
+ion-card.contact {
+    --background: silver; 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-radius: 0%;
+    width: 100%;
+    .contact{
+      --background: silver; 
+      float: left;
+    }
+    
+  }
+
+ion-grid{
+padding: auto;
+align-items: center;
+margin-top: 1vw;
+}
+ion-col{
+    margin-left: .5vh;
+    text-overflow :hide;
+}
+
+ion-text{
+    font-size: 13px;
+    margin-top: 25px;
+    color: black;
+    overflow :hidden;
+}
+
+ion-button{
+    
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px;
+}
+ion-card-content{
+    font-size: x-small;
+    color: black;
+    text-align: left;
+    padding-left: 3vh;
+}
+
+.button{
+    background-color: orange ;
+     text-align : center; 
+     font-size: xx-large;
+}
+
+.button1{
+    font-family:'Times New Roman', Times, serif;
+     font-size :larger;
+     margin-top: 20px;
+    color: white; 
 }

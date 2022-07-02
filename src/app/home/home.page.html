@@ -8,25 +8,22 @@
         <ion-img class="pro-img" src="../../assets/Images/pro.jpg"></ion-img>
       <ion-col style="width: 75%;">
         <ion-row>
-        <ion-label class="wish">Good Afternoon!</ion-label><br>
+          <ion-label class="wish">Good Afternoon!</ion-label><br>
         </ion-row>
         <ion-row>
-        <ion-label class="name">Vignesh</ion-label>
+          <ion-label class="name">Vignesh</ion-label>
         </ion-row>
       </ion-col>
-      </ion-avatar>
-    </ion-row>
+    </ion-avatar>
+  </ion-row>
   <ion-button (click)="logout()">Logout</ion-button>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
   
+  <app-daily-recommnds></app-daily-recommnds>
   <app-remind-again></app-remind-again>
   <app-new-matches></app-new-matches>
-  <app-daily-recommnds></app-daily-recommnds> 
-
   
-  
-
 </ion-content>
