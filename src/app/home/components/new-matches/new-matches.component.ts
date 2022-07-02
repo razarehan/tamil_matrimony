@@ -9,9 +9,19 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./new-matches.component.scss'],
 })
 export class NewMatchesComponent implements OnInit {
-
+  slideOpts = {
+    slidesPerView: 3,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    }}
   constructor(platform: Platform, private route: Router,public toastController: ToastController)  { }
-
-  ngOnInit() {}
+ 
+  ngOnInit() {
+   
+  }
 
 }

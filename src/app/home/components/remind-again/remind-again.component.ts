@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 
@@ -10,7 +11,7 @@ import { AlertController } from '@ionic/angular';
 export class RemindAgainComponent implements OnInit {
   data: any;
 
-  constructor(public toastController: ToastController, public alertController: AlertController) { }
+  constructor(public toastController: ToastController, public alertController: AlertController,private route: Router) { }
 
   ngOnInit() {
     fetch('../../../../assets/Dataset/Profiles.json').then(res => res.json())
@@ -38,4 +39,7 @@ export class RemindAgainComponent implements OnInit {
 
     await alert.present();
   }
+  async goProfile(value,item){
+    this.route.navigate(['/view-profile',item]);
+   }
 }
