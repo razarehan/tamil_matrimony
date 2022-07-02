@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class RemindAgainComponent implements OnInit {
   data: any;
-
+  i: any;
   constructor(public toastController: ToastController, public alertController: AlertController,private route: Router) { }
 
   ngOnInit() {

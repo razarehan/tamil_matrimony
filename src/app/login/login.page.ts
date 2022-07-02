@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
     if(this.authService.isLoggedIn()) {
       // console.log('=>' + this.authService.isLoggedIn());
       
-      this.router.navigate(['/home']);
+      this.router.navigate(['home']);
       return;
     }
   }
