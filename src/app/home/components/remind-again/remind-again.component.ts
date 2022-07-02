@@ -21,7 +21,7 @@ export class RemindAgainComponent implements OnInit {
       }).catch((err) => {
         console.log(err);
       })
-    console.log(this.data);
+    //console.log(this.data);
   }
   async seeAll() {
     const toast = await this.toastController.create({
