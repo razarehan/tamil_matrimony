@@ -21,8 +21,12 @@
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Password</ion-label>
-      <ion-input type="password" name="password" id="password" ngModel required minlength="6" #password="ngModel"
+      <ion-input [type]="inputType" name="password" id="password" ngModel required minlength="6" #password="ngModel"
         placeholder="Enter Password"></ion-input>
+        <ion-icon 
+          [name]="passwordIcon"
+          class="password-icon"
+          (click)="changePasswordIcon()"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-checkbox mode="md" name="kmli" id="kmli" checked [(ngModel)]="keepMeLoggedIn"></ion-checkbox>
@@ -92,6 +96,27 @@
           Muslim match Play Store
         </div>
       </ion-accordion>
+      <ion-accordion>
+        <ion-item slot="header">
+          <ion-label>Our Wedding Services</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Mandap.com<br>
+          WeddingBazaar.com
+        </div>
+      </ion-accordion>
+      <ion-accordion>
+        <ion-item slot="header">
+          <ion-label>Related Matrimony Services</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          HappyMarriages.com<br>
+          Matrimonial Sites<br>
+          Matrimonial Websites<br>
+          Tamil Matrimony Branches<br>
+          Tamil Jathagam
+        </div>
+      </ion-accordion>
     </ion-accordion-group>
   </ion-card>
   <!-- footer  -->
@@ -111,7 +136,7 @@
     <p class="follow-us-on">Follow Us on:</p>
     <ion-item class="follow">
       <ion-icon class="follow-icon" name="logo-facebook" color="primary"></ion-icon>
-      <ion-icon class="follow-icon" name="logo-twitter" color="success"></ion-icon>
+      <ion-icon class="follow-icon" name="logo-twitter" color="secondary"></ion-icon>
       <ion-icon class="follow-icon" name="logo-instagram" color="danger"></ion-icon>
     </ion-item>
   </ion-card>

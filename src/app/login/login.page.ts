@@ -11,6 +11,8 @@ import { ToastController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
   keepMeLoggedIn:boolean = true;
+  passwordIcon="eye-off-outline";
+  inputType="password";
   constructor(private authService: AuthService, 
               private router: Router, 
               public toastController: ToastController) { }
@@ -42,6 +44,16 @@ export class LoginPage implements OnInit {
     form.reset();
   }
 
+  changePasswordIcon() {
+    if(this.passwordIcon === 'eye-off-outline') {
+      this.passwordIcon = 'eye-outline';
+      this.inputType="text";
+    }
+    else {
+      this.passwordIcon = 'eye-off-outline';
+      this.inputType="password";
+    }
+  }
   
   async errorpresent(){
     const toast = await this.toastController.create({
