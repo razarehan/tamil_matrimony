@@ -6,9 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  },  {
+  },
+  {
     path: 'dailyrecomm',
-    loadChildren: () => import('./components/daily-recommnds/dailyrecomm/dailyrecomm.module').then( m => m.DailyrecommPageModule)
+    loadChildren: () => import('./components/daily-recommnds/dailyrecomm/dailyrecomm.module').then(m => m.DailyrecommPageModule)
   }
 
 ];
@@ -17,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule { }
