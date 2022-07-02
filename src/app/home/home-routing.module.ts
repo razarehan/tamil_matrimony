@@ -6,9 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  },  {
+  },
+  {
     path: 'dailyrecomm',
     loadChildren: () => import('./components/daily-recommnds/dailyrecomm/dailyrecomm.module').then( m => m.DailyrecommPageModule)
+  },
+  {
+    path: 'view-profile',
+    loadChildren: () => import('./Pages/view-profile/view-profile.module').then( m => m.ViewProfilePageModule)
   }
 
 ];
