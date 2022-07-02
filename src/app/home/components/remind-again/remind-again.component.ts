@@ -10,14 +10,9 @@ import { AlertController } from '@ionic/angular';
 })
 export class RemindAgainComponent implements OnInit {
   data: any;
-<<<<<<< HEAD
-  i: any;
-  constructor(public toastController: ToastController, public alertController: AlertController,private route: Router) { }
-=======
 
   constructor(public toastController: ToastController, public alertController: AlertController,
     private route: Router) { }
->>>>>>> 1f3c250a5f18c506e744b682c41e867abf326b85
 
   ngOnInit() {
     fetch('../../../../assets/Dataset/Profiles.json').then(res => res.json())
