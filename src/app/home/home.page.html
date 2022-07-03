@@ -20,8 +20,14 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="false">
+<ion-content [fullscreen]="true">
+  <section class="comp-container first">
     <app-daily-recommnds></app-daily-recommnds>
+  </section>
+  <section class="comp-container">
     <app-new-matches></app-new-matches>
+  </section>
+  <section>
     <app-remind-again></app-remind-again>
+  </section>
 </ion-content>
