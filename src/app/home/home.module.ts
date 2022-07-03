@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import {NewMatchesComponent} from './components/new-matches/new-matches.component'
 import {DailyRecommndsComponent} from './components/daily-recommnds/daily-recommnds.component'
 import{RemindAgainComponent} from './components/remind-again/remind-again.component'
+import {DiscoverMatchesComponent} from './components/discover-matches/discover-matches.component'
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import{RemindAgainComponent} from './components/remind-again/remind-again.compon
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent]
+  declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent,
+  DiscoverMatchesComponent]
 })
 export class HomePageModule {}
