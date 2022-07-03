@@ -10,7 +10,7 @@ import { ToastController } from '@ionic/angular';
 })
 export class NewMatchesComponent implements OnInit {
   slideOpts = {
-    slidesPerView: 3,
+    slidesPerView: 3.5,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

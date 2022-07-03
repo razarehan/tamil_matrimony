@@ -7,6 +7,15 @@ ion-content {
     width: 100%;
     overflow: hidden !important;
 }
+ion-card {
+    --background: white;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 h2{
     font-weight: bold;
 }
