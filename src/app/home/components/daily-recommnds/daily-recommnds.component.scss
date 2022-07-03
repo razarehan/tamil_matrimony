@@ -1,3 +1,10 @@
+ion-content {
+    width: 100%;
+    height: 210px;
+    // height: fit-content;
+    padding: 0;
+    margin-top: 10px;
+}
 .avtar{
     float: left;
     margin-bottom: 1vh;
@@ -25,16 +32,16 @@ ion-card-title{
     background-color: silver;
 }
 ion-card.contact {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
     --background: silver; 
-    margin-left: 0px;
-    margin-bottom: 0px;
-    border-radius: 0%;
+    border-radius: 0;
     width: 100%;
     .contact{
       --background: silver; 
       float: left;
     }
-    
   }
 
 ion-grid{
