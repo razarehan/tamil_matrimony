@@ -1,0 +1,66 @@
+ion-card {
+  --background: white;
+  margin: 0;
+  margin-top: 30px;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 -19px 19px 2px rgba(0, 0, 0, 0.1);
+}
+ion-item {
+  --background: white;
+  --color: black;
+  --padding-top:0;
+  --padding-bottom:0;
+  --padding-start:0;
+  --padding-end:0;
+  --inner-padding-top:0;
+  --inner-padding-bottom:0;
+  --inner-padding-start:0;
+  --inner-padding-end:0;
+  --border-style:none ;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 80px;
+  height: 115px;
+  ion-img.status-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  ion-label {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    color: black;
+  }
+  ion-badge.num {
+    --background: transparent;
+    --color: white;
+    --padding-top:0;
+    --padding-bottom:0;
+    --padding-start:0;
+    --padding-end:0;
+    font-size: 17px;
+    position: absolute;
+    top:30%;
+    left: 40%;
+  }
+}
+.acceptances {
+  background-color: rgb(93, 129, 201);
+}
+.responses {
+  background-color: rgb(255, 152, 146);
+}
+.shortlisted {
+  background-color: rgb(0, 171, 193);
+}
+.viewedProfile {
+  background-color: rgb(152, 115, 213);
+}

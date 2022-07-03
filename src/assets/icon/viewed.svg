@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="64" viewBox="0 0 72 64">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Path_1197" fill="#fff" d="M8.229 64h55.542A8.385 8.385 0 0 0 72 55.467V8.533A8.385 8.385 0 0 0 63.771 0H8.229A8.385 8.385 0 0 0 0 8.533v46.934A8.385 8.385 0 0 0 8.229 64z" data-name="Path 1197"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_3" clip-path="url(#prefix__clip-path)" data-name="Mask Group 3" opacity="0.05">
+        <g id="prefix__Group_8782" data-name="Group 8782" transform="translate(14.4 -67.2)">
+            <g id="prefix__Ellipse_1_2_" transform="translate(30.857 32)">
+                <g id="prefix__Group_8782-2" data-name="Group 8782">
+                    <ellipse id="prefix__Ellipse_115" cx="30.857" cy="32" class="prefix__cls-3" data-name="Ellipse 115" rx="30.857" ry="32"/>
+                </g>
+                <g id="prefix__Group_8783" data-name="Group 8783">
+                    <path id="prefix__Path_4472" d="M30.857 0C13.845 0 0 14.357 0 32s13.845 32 30.857 32 30.857-14.357 30.857-32S47.87 0 30.857 0zm0 53.333c-11.345 0-20.571-9.568-20.571-21.333s9.226-21.333 20.571-21.333S51.429 20.235 51.429 32 42.2 53.333 30.857 53.333z" data-name="Path 4472"/>
+                </g>
+            </g>
+            <g id="prefix__Ellipse_1_copy_2_">
+                <g id="prefix__Group_8784" data-name="Group 8784">
+                    <ellipse id="prefix__Ellipse_116" cx="61.714" cy="64" class="prefix__cls-3" data-name="Ellipse 116" rx="61.714" ry="64"/>
+                </g>
+                <g id="prefix__Group_8785" data-name="Group 8785">
+                    <path id="prefix__Path_4473" d="M61.714 0C27.689 0 0 28.715 0 64s27.689 64 61.714 64 61.714-28.715 61.714-64S95.739 0 61.714 0zm0 106.667c-22.69 0-41.143-19.136-41.143-42.667s18.453-42.667 41.143-42.667S102.857 40.469 102.857 64 84.4 106.667 61.714 106.667z" data-name="Path 4473"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

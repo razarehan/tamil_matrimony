@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="64" viewBox="0 0 72 64">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Path_1197" fill="#fff" d="M8.229 0h55.542A8.385 8.385 0 0 1 72 8.533v46.934A8.385 8.385 0 0 1 63.771 64H8.229A8.385 8.385 0 0 1 0 55.467V8.533A8.385 8.385 0 0 1 8.229 0z" data-name="Path 1197" transform="translate(2533.602 272.395)"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_3" clip-path="url(#prefix__clip-path)" data-name="Mask Group 3" opacity="0.05" transform="translate(-2533.602 -272.395)">
+        <g id="prefix__Group_8782" data-name="Group 8782" transform="translate(2467.773 275.595)">
+            <g id="prefix__Ellipse_1_2_" transform="translate(30.857 32)">
+                <g id="prefix__Group_8782-2" data-name="Group 8782">
+                    <ellipse id="prefix__Ellipse_115" cx="30.857" cy="32" class="prefix__cls-3" data-name="Ellipse 115" rx="30.857" ry="32"/>
+                </g>
+                <g id="prefix__Group_8783" data-name="Group 8783">
+                    <path id="prefix__Path_4472" d="M30.857 64C13.845 64 0 49.643 0 32S13.845 0 30.857 0s30.857 14.357 30.857 32S47.87 64 30.857 64zm0-53.333c-11.345 0-20.571 9.568-20.571 21.333s9.226 21.333 20.571 21.333S51.429 43.765 51.429 32 42.2 10.667 30.857 10.667z" data-name="Path 4472"/>
+                </g>
+            </g>
+            <g id="prefix__Ellipse_1_copy_2_">
+                <g id="prefix__Group_8784" data-name="Group 8784">
+                    <ellipse id="prefix__Ellipse_116" cx="61.714" cy="64" class="prefix__cls-3" data-name="Ellipse 116" rx="61.714" ry="64"/>
+                </g>
+                <g id="prefix__Group_8785" data-name="Group 8785">
+                    <path id="prefix__Path_4473" d="M61.714 128C27.689 128 0 99.285 0 64S27.689 0 61.714 0s61.714 28.715 61.714 64-27.689 64-61.714 64zm0-106.667c-22.69 0-41.143 19.136-41.143 42.667s18.453 42.667 41.143 42.667S102.857 87.531 102.857 64 84.4 21.333 61.714 21.333z" data-name="Path 4473"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

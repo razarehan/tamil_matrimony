@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="64" viewBox="0 0 72 64">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Path_1197" fill="#fff" d="M8.229 0h55.542A8.385 8.385 0 0 1 72 8.533v46.934A8.385 8.385 0 0 1 63.771 64H8.229A8.385 8.385 0 0 1 0 55.467V8.533A8.385 8.385 0 0 1 8.229 0z" data-name="Path 1197" transform="translate(2531.602 268.395)"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_3" clip-path="url(#prefix__clip-path)" data-name="Mask Group 3" opacity="0.05" transform="translate(-2531.602 -268.395)">
+        <g id="prefix__Group_8782" data-name="Group 8782" transform="translate(2476.602 295.395)">
+            <g id="prefix__Ellipse_1_2_" transform="translate(101 10)">
+                <g id="prefix__Group_8782-2" data-name="Group 8782">
+                    <circle id="prefix__Ellipse_115" cx="30" cy="30" r="30" class="prefix__cls-3" data-name="Ellipse 115"/>
+                </g>
+                <g id="prefix__Group_8783" data-name="Group 8783">
+                    <path id="prefix__Path_4472" d="M30 60a30 30 0 1 1 30-30 30.037 30.037 0 0 1-30 30zm0-50a20 20 0 1 0 20 20 20.02 20.02 0 0 0-20-20z" data-name="Path 4472"/>
+                </g>
+            </g>
+            <g id="prefix__Ellipse_1_copy_2_" transform="translate(71 -20)">
+                <g id="prefix__Group_8784" data-name="Group 8784">
+                    <circle id="prefix__Ellipse_116" cx="60" cy="60" r="60" class="prefix__cls-3" data-name="Ellipse 116"/>
+                </g>
+                <g id="prefix__Group_8785" data-name="Group 8785">
+                    <path id="prefix__Path_4473" d="M60 120a60 60 0 1 1 60-60 60.073 60.073 0 0 1-60 60zm0-100a40 40 0 1 0 40 40 40.04 40.04 0 0 0-40-40z" data-name="Path 4473"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
