@@ -1,0 +1,42 @@
+ion-content {
+    --background: white;
+    --color: black;
+    padding-top: 10px;
+    margin: 0;
+    height: 270px;
+    width: 100%;
+    overflow: hidden !important;
+}
+h2{
+    font-weight: bold;
+}
+ion-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    padding-left: 1.5vh;
+    background-color: blue;
+}
+ion-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    padding-left: 1.5vh;
+    background-color: blue;
+}
+p{
+    font-size: large;
+    float: left;
+    padding-left: 1vh;
+}
+
+ion-text{
+    font-size: small;
+    float: left;
+    padding-left: 1vh;
+}
+
+h3{
+padding-left: 2vh;
+color: black;
+}
