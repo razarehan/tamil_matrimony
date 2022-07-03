@@ -9,6 +9,8 @@ import {NewMatchesComponent} from './components/new-matches/new-matches.componen
 import {DailyRecommndsComponent} from './components/daily-recommnds/daily-recommnds.component'
 import{RemindAgainComponent} from './components/remind-again/remind-again.component'
 import {DiscoverMatchesComponent} from './components/discover-matches/discover-matches.component'
+import { StatusBarComponent } from './components/status-bar/status-bar.component';
+
 
 @NgModule({
   imports: [
@@ -18,6 +20,6 @@ import {DiscoverMatchesComponent} from './components/discover-matches/discover-m
     HomePageRoutingModule,
   ],
   declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent,
-  DiscoverMatchesComponent]
+  DiscoverMatchesComponent, StatusBarComponent]
 })
 export class HomePageModule {}
