@@ -1,26 +1,7 @@
 <ion-header>
-  <ion-label class="headtitle">400 Premium Matches</ion-label>
-  <ion-label (click)="seeAll()" class ="seeall">See all</ion-label>
+  <ion-label class="headtitle">2,732 Matches Based On Your Preferences</ion-label>
 </ion-header>
 <ion-content>
-  <!--    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>-->
     <ion-avatar class="img-avtar">
       <ion-img class ="image" src={{data[0].img}} (click)="goProfile(i,data[0])"></ion-img>
       <ion-label class="image-title" (click)="goProfile(i,data[0])"><b>{{data[0].name}}</b></ion-label><br>
@@ -45,4 +26,5 @@
       <ion-label class="image-title" (click)="goProfile(i,data[2])">{{data[2].place}} </ion-label><br>
       <br><br>
     </ion-avatar>
+    <ion-button class="view" (click)="seeAll()"></ion-button>
 </ion-content>

@@ -1,0 +1,75 @@
+ion-header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: unset;
+    height: fit-content;
+}
+.headtitle{
+    font-size: 16px;
+    font-weight: 900;
+    float: left;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: 75%;
+    height: fit-content;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+ion-content{
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+ion-card{
+    --background: white;
+    --color: black;
+    --offset-top: 30px;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 100%;
+    overflow-y: scroll !important;
+}
+.seeall{
+    font-size: 13px;
+    color: #ed6402;
+    text-align: right;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    align-items: left;
+    width: 25%;
+    height: fit-content;
+}
+.image{
+    margin-left: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    --border-radius: 50%!important;
+    height: 10rem;
+    width: 10rem;
+    max-width: 5rem;
+    max-height: 5rem;
+    object-fit: fill;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.img-avtar{
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+    height:fit-content
+}
+.image-title{
+    --font-size: 18px;
+    height: 100px;
+    min-height: 50px;
+    --overflow:auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    --padding-top: 10px;
+    --line-height: 2.5px !important;
+    position: relative;
+}
