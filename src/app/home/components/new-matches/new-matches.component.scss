@@ -1,12 +1,4 @@
-ion-content {
-    --background: white;
-    --color: black;
-    padding-top: 10px;
-    margin: 0;
-    height: 160px;
-    width: 100%;
-    overflow: auto !important;
-}
+
 ion-card {
     --background: white;
     margin: 0;
@@ -17,81 +9,27 @@ ion-card {
     flex-wrap: wrap;
   }
 
-
-  ion-item {
-    float: left;
-    --background: white;
-    --color: black;
-    --padding-top:0;
-    --padding-bottom:0;
-    --padding-start:0;
-    --padding-end:0;
-    --inner-padding-top:0;
-    --inner-padding-bottom:0;
-    --inner-padding-start:0;
-    --inner-padding-end:0;
-    --border-style:none ;
-    margin-top: 25px;
-    margin-left: 10px;
-    width: 80px;
-    height: 115px;
-    ion-img.status-icon {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-    }
-    ion-label {
-      margin: 0;
-      margin-top: 3px;
-      padding: 0;
-      font-size: 10px;
-      text-align: center;
-      color: black;
-    }
-    ion-badge.num {
-      --background: transparent;
-      --color: white;
-      --padding-top:0;
-      --padding-bottom:0;
-      --padding-start:0;
-      --padding-end:0;
-      font-size: 17px;
-      position: absolute;
-      top:30%;
-      left: 40%;
-    }
-  }
-  .acceptances {
-    background-color: rgb(93, 129, 201);
-  }
-  .responses {
-    background-color: rgb(255, 152, 146);
-  }
-  .shortlisted {
-    background-color: rgb(0, 171, 193);
-  }
-  .viewedProfile {
-    background-color: rgb(152, 115, 213);
-  }
+  
 h2{
     font-weight: bold;
 }
 ion-avatar{
-    width: 100px;
-    height: 100px;
+    height: 12vh;
+    width: 20vw;
     border-radius: 16px;
 }
 ion-img{
-    width: 100px;
-    height: 100px;
     border-radius: 16px;
 }
 h5{
-    padding-left: 2vh;
-    color: black;
     font-weight: bold;
-    float: left;
-    }
+    font-style: normal;
+    color: black;
+    margin-left: 4vw;
+}
+p{
+    font-size:small;
+}
 
     a{
         color: orange;
