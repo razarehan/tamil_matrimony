@@ -18,8 +18,10 @@ export class NewMatchesComponent implements OnInit {
       modifier: 1,
       slideShadows: true,
     }}
-  constructor(platform: Platform, private route: Router,public toastController: ToastController)  { }
- 
+  constructor(platform: Platform, private router: Router,public toastController: ToastController)  { }
+  DailyRec(){
+    this.router.navigate(['dailyrecomm']);
+  }
   ngOnInit() {
    
   }
