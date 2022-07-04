@@ -5,7 +5,11 @@
     "img":"../../../../assets/images/img1.jpg",
     "created_by" : "Parent",
     "age":25, 
+<<<<<<< HEAD
     "height":"5'5''", 
+=======
+    "height":"5\"1\"", 
+>>>>>>> 3bfc7f33b3e23b04ce4d69df258ca367729b7dc2
     "mother":"Malayalam", 
     "caste": "Nair",
     "score":"0.8",
@@ -20,7 +24,11 @@
       "img":"../../../../assets/images/img2.jpg",
       "created_by" : "relative",
       "age":23, 
+<<<<<<< HEAD
       "height":"5'2''", 
+=======
+      "height":"5\"4\"", 
+>>>>>>> 3bfc7f33b3e23b04ce4d69df258ca367729b7dc2
       "mother": "Malayalam",
       "caste": "Nair",
       "score":"0.7",
@@ -35,7 +43,7 @@
       "img":"../../../../assets/images/img3.jpg",
       "created_by" : "relative",
       "age":23, 
-      "height":"5'1''", 
+      "height":"5\"2\"", 
       "mother": "Malayalam",
       "caste": "Nair",
       "score":"0.7",

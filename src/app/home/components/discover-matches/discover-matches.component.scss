@@ -1,0 +1,68 @@
+ion-card {
+    --background: white;
+    margin: 0;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  h6 {
+    color: black;
+    padding-left: 15px;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+  ion-item {
+    --background: white;
+    --color: black;
+    --padding-top:0;
+    --padding-bottom:0;
+    --padding-start:0;
+    --padding-end:0;
+    --inner-padding-top:0;
+    --inner-padding-bottom:0;
+    --inner-padding-start:0;
+    --inner-padding-end:0;
+    --border-style:none ;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 80px;
+    height: 115px;
+    ion-img.status-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
+    ion-label {
+      margin: 0;
+      margin-top: 3px;
+      padding: 0;
+      font-size: 10px;
+      text-align: center;
+      color: black;
+    }
+  }
+  .profession {
+    background-color: rgb(255, 148, 142);
+  }
+  .education {
+    background-color: rgb(0, 195, 217);
+  }
+  .star {
+    background-color: rgb(171, 137, 227);
+  }
+  .featured {
+    background-color: rgb(0, 217, 183);
+  }
+  .text {
+    text-align: left !important;
+  }
+  .weight {
+    font-weight: bold;
+  }

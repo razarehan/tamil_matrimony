@@ -20,8 +20,35 @@
 </ion-header>
 
 
-<ion-content class="container" [fullscreen]="true">
-  <app-daily-recommnds></app-daily-recommnds>
-  <app-new-matches></app-new-matches>
-  <app-remind-again></app-remind-again>
+<ion-content [fullscreen]="true">
+  <section>
+    <app-status-bar></app-status-bar>
+  </section>
+  <section class="comp-container first">
+    <app-daily-recommnds></app-daily-recommnds>
+  </section>
+  <section class="comp-container">
+    <app-new-matches></app-new-matches>
+  </section>
+  <section>
+    <app-remind-again></app-remind-again>
+  </section>
+  <section>
+    <app-discover-matches></app-discover-matches>
+  </section>
+  <section class="comp-container">
+    <app-new-matches></app-new-matches>
+  </section>
+  <section>
+    <app-explore-bm></app-explore-bm>
+  </section>
+  <section class="comp-container">
+    <app-new-matches></app-new-matches>
+  </section>
+  <section class="comp-container">
+    <app-new-matches></app-new-matches>
+  </section>
+  <section class="comp-container">
+    <app-new-matches></app-new-matches>
+  </section>
 </ion-content>

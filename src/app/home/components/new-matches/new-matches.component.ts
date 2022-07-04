@@ -10,7 +10,7 @@ import { ToastController } from '@ionic/angular';
 })
 export class NewMatchesComponent implements OnInit {
   slideOpts = {
-    slidesPerView: 3,
+    slidesPerView: 3.5,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -18,8 +18,10 @@ export class NewMatchesComponent implements OnInit {
       modifier: 1,
       slideShadows: true,
     }}
-  constructor(platform: Platform, private route: Router,public toastController: ToastController)  { }
- 
+  constructor(platform: Platform, private router: Router,public toastController: ToastController)  { }
+  DailyRec(){
+    this.router.navigate(['dailyrecomm']);
+  }
   ngOnInit() {
    
   }
