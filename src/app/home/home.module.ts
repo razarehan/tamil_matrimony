@@ -10,6 +10,7 @@ import {DailyRecommndsComponent} from './components/daily-recommnds/daily-recomm
 import{RemindAgainComponent} from './components/remind-again/remind-again.component'
 import {DiscoverMatchesComponent} from './components/discover-matches/discover-matches.component'
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
+import { ExploreBmComponent } from './components/explore-bm/explore-bm.component';
 
 
 @NgModule({
@@ -20,6 +21,6 @@ import { StatusBarComponent } from './components/status-bar/status-bar.component
     HomePageRoutingModule,
   ],
   declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent,
-  DiscoverMatchesComponent, StatusBarComponent]
+  DiscoverMatchesComponent, StatusBarComponent, ExploreBmComponent]
 })
 export class HomePageModule {}
