@@ -1,39 +1,25 @@
-
 <ion-card>
-  <h5><strong>Discover Matches</strong></h5>
-  <ion-slides [options]="slideOpts">
-    <ion-slide>
-      <div class="avtar">
-        <ion-avatar>
-          <img src="../../../../assets/icon/WhatsApp Image 2022-07-04 at 12.17.26 PM (1).jpeg" alt="Profetion">
-        </ion-avatar>
-        <p>Profession <br/>
-          <ion-text>234 matches</ion-text></p>      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="avtar">
-        <ion-img src="../../../../assets/icon/WhatsApp Image 2022-07-04 at 12.17.26 PM (1).jpeg" class="status-icon acceptances"></ion-img>
-        <p>Education <br/>
-          <ion-text>234 matches</ion-text></p>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="avtar">
-        <ion-avatar>
-          <ion-img src="../../../../assets/icon/WhatsApp Image 2022-07-04 at 12.17.26 PM (3).jpeg" alt="star"></ion-img>
-        </ion-avatar>
-        <p>Star <br/>
-          <ion-text>256 matches</ion-text></p>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="avtar">
-        <ion-avatar>
-          <ion-img src="../../../../assets/icon/WhatsApp Image 2022-07-04 at 12.17.26 PM.jpeg"></ion-img>
-        </ion-avatar>
-        <p>Features <br/>
-        <ion-text>1145 matches</ion-text></p>
-      </div>
-    </ion-slide>
-  </ion-slides>
+  <ion-item>
+    <ion-img src="../../../../assets/icon/profession.svg" class="status-icon profession"></ion-img>
+    <ion-label position="stacked" class="text weight">Profession</ion-label>
+    <ion-label position="stacked" class="text">{{profession}} matches</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-img src="../../../../assets/icon/education.svg" class="status-icon education"></ion-img>
+    <ion-label position="stacked" class="text weight">Education</ion-label>
+    <ion-label position="stacked" class="text">{{education}} matches</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-img src="../../../../assets/icon/star.svg" class="status-icon star"></ion-img>
+    <ion-label position="stacked" class="text weight">Star</ion-label>
+    <ion-label position="stacked" class="text">{{star}} matches</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-img src="../../../../assets/icon/featured.svg" class="status-icon featured"></ion-img>
+    <ion-label position="stacked" class="text weight">Featured</ion-label>
+    <ion-label position="stacked" class="text">{{featured}} matches</ion-label>
+  </ion-item>
 </ion-card>

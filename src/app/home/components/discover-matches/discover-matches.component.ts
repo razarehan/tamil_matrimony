@@ -10,18 +10,10 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./discover-matches.component.scss'],
 })
 export class DiscoverMatchesComponent implements OnInit {
-
-  slideOpts = {
-    slidesPerView: 3.5,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    }}
-    constructor(platform: Platform, private route: Router,public toastController: ToastController){ }
-
+  profession = "366";
+  education = '2,269';
+  star = "252";
+  featured = "1,163";
   ngOnInit() {}
 
 }

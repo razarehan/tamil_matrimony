@@ -1,57 +1,60 @@
-ion-content {
-    --background: white;
-    --color: black;
-    padding-top: 10px;
-    margin: 0;
-    height: 270px;
-    width: 100%;
-    overflow: hidden !important;
-}
 ion-card {
     --background: white;
     margin: 0;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
   }
-h2{
+  ion-item {
+    --background: white;
+    --color: black;
+    --padding-top:0;
+    --padding-bottom:0;
+    --padding-start:0;
+    --padding-end:0;
+    --inner-padding-top:0;
+    --inner-padding-bottom:0;
+    --inner-padding-start:0;
+    --inner-padding-end:0;
+    --border-style:none ;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 80px;
+    height: 115px;
+    ion-img.status-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
+    ion-label {
+      margin: 0;
+      margin-top: 3px;
+      padding: 0;
+      font-size: 10px;
+      text-align: center;
+      color: black;
+    }
+  }
+  .profession {
+    background-color: rgb(255, 148, 142);
+  }
+  .education {
+    background-color: rgb(0, 195, 217);
+  }
+  .star {
+    background-color: rgb(171, 137, 227);
+  }
+  .featured {
+    background-color: rgb(0, 217, 183);
+  }
+  .text {
+    text-align: left;
+  }
+  .weight {
     font-weight: bold;
-}
-ion-avatar{
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    padding-left: 1.5vh;
-    background-color: blue;
-}
-ion-img{
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    padding-left: 1.5vh;
-    background-color: blue;
-}
-p{
-    font-size: large;
-    float: left;
-    padding-left: 1vh;
-}
-
-ion-text{
-    font-size: small;
-    float: left;
-    padding-left: 1vh;
-}
-
-h5{
-padding-left: 2vh;
-color: black;
-}
-
-ion-img.status-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
   }
