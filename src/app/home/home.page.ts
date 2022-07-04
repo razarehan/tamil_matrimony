@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   constructor(private auth: AuthService, private router: Router) { }
 
@@ -16,4 +16,7 @@ export class HomePage {
     this.auth.logout();
   }
 
+  ngOnInit(): void {
+    this.router.navigate(['dashboard']);
+  }
 }
