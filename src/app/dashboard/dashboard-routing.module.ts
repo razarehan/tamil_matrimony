@@ -8,16 +8,36 @@ import { DashboardPage } from './dashboard.page';
 const routes: Routes = [
   {
     path: '',
-    component: DashboardPage
+    // path: 'tabs',
+    component: DashboardPage,
+    children: [
+      {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+      {
+        path: 'mailbox',
+        loadChildren: () => import('../mailbox/mailbox.module').then( m => m.MailboxPageModule)
+      },
+      {
+        path: 'matches',
+        loadChildren: () => import('../mailbox/mailbox.module').then( m => m.MailboxPageModule)
+      },
+      {
+        path: 'notification',
+        loadChildren: () => import('../mailbox/mailbox.module').then( m => m.MailboxPageModule)
+      },
+      {
+        path: 'search',
+        loadChildren: () => import('../mailbox/mailbox.module').then( m => m.MailboxPageModule)
+      }
+    ]
   },
   {
-    path: 'home',
-    component: HomePage
-  },
-  {
-    path: 'mailbox',
-    component: MailboxPage
-  }
+    path: '',
+    redirectTo: '/dashboard/home',
+    pathMatch: 'full'
+  } 
 ];
 
 @NgModule({

@@ -1,31 +1,32 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>dashboard</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
-  <div class="container">
-    <!-- <div class="row">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-        <ul class="nav nav-tabs">
-          <li role="presentation" 
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{'exact': true}">
-              <a routerLink="/home">Home</a>
-          </li>
-          <li role="presentation" 
-            routerLinkActive="active">
-              <a [routerLink]="['/mailbox']">Mailbox</a></li>
-        </ul>
-      </div>
-    </div> -->
-
-    
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-        <ion-router-outlet></ion-router-outlet>
-      </div>
-    </div>
-  </div>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="matches">
+        <ion-icon name="people-outline"></ion-icon>
+        <ion-label>Matches</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="mailbox">
+        <ion-icon name="mail"></ion-icon>
+        <ion-label>Mailbox</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="notification">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>Notification</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>Search</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
