@@ -74,11 +74,13 @@
   font-size: 14px;
   font-weight: 700;
 }
-
+.remind{
+  height: fit-content;
+}
 ion-content {
   --background: white;
   --color: black;
-  height: 1000px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 25px 25px 0 0;
