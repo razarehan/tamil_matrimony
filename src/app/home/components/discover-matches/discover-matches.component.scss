@@ -45,7 +45,13 @@ ion-text{
     padding-left: 1vh;
 }
 
-h3{
+h5{
 padding-left: 2vh;
 color: black;
 }
+
+ion-img.status-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
