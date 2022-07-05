@@ -21,12 +21,15 @@
       <br><br>
       <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
     </ion-avatar>-->
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src={{data[0].img}} (click)="goProfile(i,data[0])"></ion-img>
-      <ion-label class="image-title" (click)="goProfile(i,data[0])">Remind <b>{{data[0].name}}</b> ({{data[0].age}} yrs, {{data[0].height}}) about your Interst </ion-label>
+    <ion-avatar class="img-avtar" *ngFor="let item of data; let i = index">
+      <ion-col *ngIf="i < 3">
+      <ion-img class ="image" src={{item.img}} (click)="goProfile(i,item)"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,item)">Remind <b>{{item.name}}</b> ({{item.age}} yrs, {{item.height}}) about your Interst </ion-label>
       <br><br>
       <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
+      </ion-col>
     </ion-avatar>
+    <!--
     <ion-avatar class="img-avtar">
       <ion-img class ="image" src={{data[1].img}} (click)="goProfile(i,data[1])"></ion-img>
       <ion-label class="image-title" (click)="goProfile(i,data[1])">Remind <b>{{data[1].name}}</b> ({{data[1].age}} yrs, {{data[1].height}}) about your Interst </ion-label>
@@ -39,5 +42,5 @@
       <br><br>
       <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
     </ion-avatar>
-    
+    -->
 </ion-content>

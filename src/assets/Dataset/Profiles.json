@@ -43,5 +43,19 @@
       "profession": "Banking Professional",
       "place": "Malappuram",
       "state": "Kerala"
+    },
+    {
+      "name":"Keerthi", 
+      "id": "M1901344",
+      "img":".\\assets\\images\\img4.jpg",
+      "created_by" : "Parent",
+      "age":24, 
+      "height":"5 ft 3 in", 
+      "mother": "Malayalam",
+      "caste": "Nair",
+      "score":"0.45",
+      "education": "Bcom",
+      "profession": "Accountant",
+      "place": "Thiruvananthapuram, Kerala"
     }
 ]

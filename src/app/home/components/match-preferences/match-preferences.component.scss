@@ -73,3 +73,12 @@ ion-card{
     --line-height: 2.5px !important;
     position: relative;
 }
+.view{
+    height: 30px!important;
+    width: 50%;
+    max-width: 50%;
+    font-size: 12px!important;
+    --ion-color-contrast: white !important;
+    text-transform: capitalize!important;
+    --border-radius: 64px;
+}
