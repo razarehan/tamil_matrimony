@@ -3,12 +3,13 @@ import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 
+
 @Component({
-  selector: 'app-remind-again',
-  templateUrl: './remind-again.component.html',
-  styleUrls: ['./remind-again.component.scss'],
+  selector: 'app-match-preferences',
+  templateUrl: './match-preferences.component.html',
+  styleUrls: ['./match-preferences.component.scss'],
 })
-export class RemindAgainComponent implements OnInit {
+export class MatchPreferencesComponent implements OnInit {
   data: any;
 
   constructor(public toastController: ToastController, public alertController: AlertController,
@@ -21,7 +22,6 @@ export class RemindAgainComponent implements OnInit {
       }).catch((err) => {
         console.log(err);
       })
-    //console.log(this.data);
   }
   async seeAll() {
     const toast = await this.toastController.create({
@@ -30,15 +30,6 @@ export class RemindAgainComponent implements OnInit {
       position: 'middle'
     });
     await toast.present();
-  }
-  async remindHer() {
-    const alert = await this.alertController.create({
-      header: '',
-      message: 'You reminded her',
-      buttons: ['Ok'],
-    });
-
-    await alert.present();
   }
   
   async goProfile(value,item) {

@@ -1,49 +1,78 @@
+
+
 ion-header{
     border: none;
     box-shadow: none;
+    object-fit: fill;
+    max-height: 50%;
 }
-ion-toolbar{
-    border: none;
-    box-shadow: none;
-}
-ion-title{
-    font-size: 1.5rem;
-}
-ion-content {
-    --padding-top: 30px;
-}
-ion-card{
-    border-radius: 15px;
-    height:30rem;
-    width: 20rem;
-    margin:auto;
+ion-slides{
+    max-width: 100%;
+    max-height: 100% !important;
+    position: relative;
 }
 ion-slide{
+    max-width: 100%;
+    max-height: 50% !important;
     text-align: left;
     padding: 0%;
     margin-top: 0rem;
-    height:20rem;
-    width: 20rem;
+    height:100%;
+    width: 100%;
 }
- 
-img{
-    border-radius: 15px;
-    height:20rem;
-    width: 20rem;
+.primg{
+    max-width: 100%;
+    max-height: 100% !important;
+    height:100%;
+    width: 100%;
 }
-ion-card-header{
-    padding:0.5em;
-    margin-left: 0.5em;
+ion-content{
+    --padding-top: 30px;
+    --padding-bottom: 0px;
+    --padding-start: 30px;
+    --padding-end: 30px;
 }
-ion-card-title{
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: left;
+.details{
+    float: left;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 3px;
+    font-family: Lato,arial;
 }
-ion-card-content{
-    font-size: 1rem;
-    max-height:100%;
-    min-height: fit-content;
+.name{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    padding-inline: 0px;
+    font-family: Lato,arial;
+}
+.match-score {
+    float: left;
+    width: 100%;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    letter-spacing: .651px;
+}
+.percent{
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: 600;
+    letter-spacing: .651px;
+}
+ion-progress-bar{
+    position: relative;
+    height: 4px;
+    float: left;
+    width: 35%;
+    border-radius: 2px;
+    color: green;
 }
 ion-list{
     width: 300px;
