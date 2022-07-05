@@ -2,42 +2,11 @@
   <ion-label class="headtitle">Remind Them Again</ion-label>
   <ion-label (click)="seeAll()" class ="seeall">See all</ion-label>
 </ion-header>
-<ion-content>
-  <!--    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src="../../../../assets/images/img1.jpg"></ion-img>
-      <ion-label class="image-title">Remind <b>Ashmi</b> 22 yrs, 5.2 about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>-->
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src={{data[0].img}} (click)="goProfile(i,data[0])"></ion-img>
-      <ion-label class="image-title" (click)="goProfile(i,data[0])">Remind <b>{{data[0].name}}</b> ({{data[0].age}} yrs, {{data[0].height}}) about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src={{data[1].img}} (click)="goProfile(i,data[1])"></ion-img>
-      <ion-label class="image-title" (click)="goProfile(i,data[1])">Remind <b>{{data[1].name}}</b> ({{data[1].age}} yrs, {{data[1].height}}) about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    <ion-avatar class="img-avtar">
-      <ion-img class ="image" src={{data[2].img}} (click)="goProfile(i,data[2])"></ion-img>
-      <ion-label class="image-title" (click)="goProfile(i,data[2])">Remind <b>{{data[2].name}}</b> ({{data[2].age}} yrs, {{data[2].height}}) about your Interst </ion-label>
-      <br><br>
-      <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
-    </ion-avatar>
-    
-</ion-content>
+<ion-card>
+  <ion-avatar class="img-avtar" *ngFor="let user of data">
+    <ion-img class ="image" src="{{user.img}}" (click)="goProfile(user)"></ion-img>
+    <ion-label class="image-title" (click)="goProfile(user)">Remind <b>{{user.name}}</b> ({{user.age}} yrs, {{user.height}}) about your interest</ion-label>
+    <br><br>
+    <ion-label (click)="remindHer()" class="remind">Remind Her</ion-label>
+  </ion-avatar>
+</ion-card>

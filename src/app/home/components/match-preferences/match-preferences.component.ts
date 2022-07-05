@@ -32,7 +32,7 @@ export class MatchPreferencesComponent implements OnInit {
     await toast.present();
   }
   
-  async goProfile(value,item) {
+  async goProfile(item) {
     this.route.navigate(['view-profile', item]);
   }
 }

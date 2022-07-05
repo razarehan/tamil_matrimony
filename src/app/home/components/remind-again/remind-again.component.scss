@@ -15,14 +15,13 @@ ion-header{
     margin-left: 20px;
     margin-bottom: 5px;
 }
-ion-content{
-    --padding-start: 20px;
-    --padding-end: 20px;
-}
 ion-card{
     --background: white;
     --color: black;
     --offset-top: 30px;
+    --padding-start: 16px;
+    --padding-end:16px;
+    height: 350px;
     box-shadow: none;
     margin: 0;
     padding: 0;
