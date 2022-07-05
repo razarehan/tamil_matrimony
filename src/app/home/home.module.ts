@@ -12,7 +12,10 @@ import {DiscoverMatchesComponent} from './components/discover-matches/discover-m
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
 import { ExploreBmComponent } from './components/explore-bm/explore-bm.component';
 import { MatchPreferencesComponent } from './components/match-preferences/match-preferences.component';
-
+import {MemeberViewComponent} from './components/memeber-view/memeber-view.component'
+import {MutualMemberComponent} from './components/mutual-member/mutual-member.component'
+import {MemberLookingComponent} from './components/member-looking/member-looking.component'
+import {MatchesShortlistedComponent} from './components/matches-shortlisted/matches-shortlisted.component'
 @NgModule({
   imports: [
     CommonModule,
@@ -21,6 +24,7 @@ import { MatchPreferencesComponent } from './components/match-preferences/match-
     HomePageRoutingModule,
   ],
   declarations: [HomePage, NewMatchesComponent, DailyRecommndsComponent,RemindAgainComponent,
-  DiscoverMatchesComponent, StatusBarComponent, ExploreBmComponent,PremiumComponent,MatchPreferencesComponent]
+  DiscoverMatchesComponent, StatusBarComponent, ExploreBmComponent,PremiumComponent,MatchPreferencesComponent,
+  MemeberViewComponent,MutualMemberComponent,MemberLookingComponent,MatchesShortlistedComponent]
 })
 export class HomePageModule {}
