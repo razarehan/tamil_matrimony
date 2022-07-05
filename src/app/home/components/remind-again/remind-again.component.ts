@@ -41,7 +41,7 @@ export class RemindAgainComponent implements OnInit {
     await alert.present();
   }
   
-  async goProfile(item) {
+  async goProfile(value,item) {
     this.route.navigate(['view-profile', item]);
   }
 }

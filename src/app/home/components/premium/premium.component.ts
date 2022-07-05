@@ -31,7 +31,7 @@ export class PremiumComponent implements OnInit {
     await toast.present();
   }
   
-  async goProfile(item) {
+  async goProfile(value,item) {
     this.route.navigate(['view-profile', item]);
   }
 }
