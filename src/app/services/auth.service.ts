@@ -30,6 +30,9 @@ export class AuthService {
   }
 
   isLoggedIn() {
+    if(sessionStorage.getItem('authToken') === 'asdasdasd') {
+      return true;
+    }
     if(this.getToken() === null) {
       return false;
     }
@@ -40,14 +43,19 @@ export class AuthService {
   logout() {
     this.loggedIn = false;
     localStorage.removeItem('token');
+    sessionStorage.removeItem('authToken');
     this.router.navigate(['login']);
   }
 
   login(email: string, password: string, keepMeLoggedIn:boolean) {
     if (email === 'admin@gmail.com' && password === '123123') {
       this.loggedIn = true;
-      if(keepMeLoggedIn)
+      if(keepMeLoggedIn) {
         this.setToken('authToken');
+      }
+      else {
+        sessionStorage.setItem('authToken', 'asdasdasd');
+      }
       return of({ name: 'Badal Das', email: 'badal.swami360@gmail.com' });
     }
     return throwError(new Error('Incorrect username or password'));
