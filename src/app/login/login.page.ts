@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
     if(this.authService.isLoggedIn()) {
       // console.log('=>' + this.authService.isLoggedIn());
       
-      this.router.navigate(['home']);
+      this.router.navigate(['dashboard']);
       return;
     }
   }
@@ -36,7 +36,7 @@ export class LoginPage implements OnInit {
     this.authService.login(email, password, this.keepMeLoggedIn).subscribe(resData => {
       console.log(resData);
       this.succes();
-      this.router.navigate(['/home']);
+      this.router.navigate(['dashboard']);
     }, error => {
       console.log(error);
       this.errorpresent();

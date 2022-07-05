@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { RemindAgainComponent } from './remind-again.component';
+import { MatchPreferencesComponent } from './match-preferences.component';
 
-describe('RemindAgainComponent', () => {
-  let component: RemindAgainComponent;
-  let fixture: ComponentFixture<RemindAgainComponent>;
+describe('MatchPreferencesComponent', () => {
+  let component: MatchPreferencesComponent;
+  let fixture: ComponentFixture<MatchPreferencesComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RemindAgainComponent ],
+      declarations: [ MatchPreferencesComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RemindAgainComponent);
+    fixture = TestBed.createComponent(MatchPreferencesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

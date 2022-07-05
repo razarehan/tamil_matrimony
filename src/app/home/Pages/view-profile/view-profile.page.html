@@ -1,23 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text=" " ></ion-back-button>
-   </ion-buttons>
-    <ion-title *ngFor="let item of profiledata; index as i">{{item.id}}</ion-title>
-  </ion-toolbar>
+  <ion-slides>
+    <ion-slide *ngFor="let img1 of img; index as i" >
+      <img class="primg" src={{img1}}>
+    </ion-slide>
+  </ion-slides>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="home"></ion-back-button>
+  </ion-buttons>
 </ion-header>
 <ion-content  fullscreen>
-    <ion-card *ngFor="let item of profiledata; index as i">
-      <ion-slides>
-        <ion-slide *ngFor="let item1 of array1; index as i" >
-          <img class="profile" src={{item1}}>
-        </ion-slide>
-      </ion-slides>
-      <ion-card-header>
-        <ion-card-title>{{item.name}}</ion-card-title>
-      </ion-card-header>
-      <ion-card-content color="dark">
-        {{item.age}} Yrs, {{item.height}}, {{item.mother}}, {{item.caste}}<br>{{item.education}}, {{item.profession}}, {{item.place}}<br><br>
-      </ion-card-content>
-    </ion-card>
+  <ion-grid *ngFor="let item of profiledata; index as i">
+    <ion-row>
+      <ion-title class="name">{{item.name}}</ion-title>
+      <ion-label class="details">{{item.age}} Years, {{item.height}}, {{item.place}}</ion-label>
+      <ion-label class="details">{{item.id}} | Online Now</ion-label>
+    </ion-row>
+    <ion-row style="margin-top: 16px;">
+      <ion-label class="match-score">Match Score <span class="percent">{{item.score}}%</span> </ion-label><br>
+      <ion-progress-bar color="success" value={{item.score}}></ion-progress-bar>
+    </ion-row>
+  </ion-grid>
 </ion-content>

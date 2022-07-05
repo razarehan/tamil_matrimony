@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-label class="headtitle">2,732 Matches Based On Your Preferences</ion-label>
+</ion-header>
+<ion-content>
+    <ion-avatar class="img-avtar">
+      <ion-img class ="image" src={{data[0].img}} (click)="goProfile(i,data[0])"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[0])"><b>{{data[0].name}}</b></ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[0])">{{data[0].age}} Years, {{data[0].height}}, {{data[0].education}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[0])">{{data[0].profession}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[0])">{{data[0].place}} </ion-label><br>
+      <br><br>
+    </ion-avatar>
+    <ion-avatar class="img-avtar">
+      <ion-img class ="image" src={{data[1].img}} (click)="goProfile(i,data[1])"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[1])"><b>{{data[1].name}}</b></ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[1])">{{data[1].age}} Years, {{data[1].height}}, {{data[1].education}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[1])">{{data[1].profession}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[1])">{{data[1].place}} </ion-label><br>
+      <br><br>
+    </ion-avatar>
+    <ion-avatar class="img-avtar">
+      <ion-img class ="image" src={{data[2].img}} (click)="goProfile(i,data[2])"></ion-img>
+      <ion-label class="image-title" (click)="goProfile(i,data[2])"><b>{{data[2].name}}</b></ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[2])">{{data[2].age}} Years, {{data[2].height}}, {{data[2].education}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[2])">{{data[2].profession}} </ion-label><br>
+      <ion-label class="image-title" (click)="goProfile(i,data[2])">{{data[2].place}} </ion-label><br>
+      <br><br>
+    </ion-avatar>
+    <ion-button class="view" (click)="seeAll()"></ion-button>
+</ion-content>

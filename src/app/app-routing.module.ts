@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'home',
     canActivate: [AuthGuardService],
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('../app/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
@@ -15,6 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'dailyrecomm',
+    canActivate: [AuthGuardService],
     loadChildren: () => import('../app/home/components/daily-recommnds/dailyrecomm/dailyrecomm.module').then(m => m.DailyrecommPageModule)
   },
   {
@@ -23,12 +24,23 @@ const routes: Routes = [
   },
   {
     path: 'view-profile',
+    canActivate: [AuthGuardService],
     loadChildren: () => import('../app/home/Pages/view-profile/view-profile.module').then(m => m.ViewProfilePageModule)
+  },
+  {
+    path: 'mailbox',
+    canActivate: [AuthGuardService],
+    loadChildren: () => import('./mailbox/mailbox.module').then( m => m.MailboxPageModule)
+  },
+  {
+    path: 'dashboard',
+    canActivate: [AuthGuardService],
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
   {
     path: '**',
     loadChildren: () => import('./pagenotgound/pagenotgound.module').then(m => m.PagenotgoundPageModule)
-  },
+  }
 
 ];
 
