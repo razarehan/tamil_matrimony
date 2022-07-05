@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { MatchPreferencesComponent } from './match-preferences.component';
+import { MemeberViewComponent } from './memeber-view.component';
 
-describe('MatchPreferencesComponent', () => {
-  let component: MatchPreferencesComponent;
-  let fixture: ComponentFixture<MatchPreferencesComponent>;
+describe('MemeberViewComponent', () => {
+  let component: MemeberViewComponent;
+  let fixture: ComponentFixture<MemeberViewComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MatchPreferencesComponent ],
+      declarations: [ MemeberViewComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(MatchPreferencesComponent);
+    fixture = TestBed.createComponent(MemeberViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
